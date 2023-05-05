@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!------ Fonts & Icons ------>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antonio:wght@200;300;400;500;600&family=Montserrat:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- bootstrap -->
+
+    <link
+      rel="stylesheet"
+      href="../css/bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css"
+    />
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/landingPage.css" />
+  </head>
+
+  <body>
+    <main>
+      <div class="container">
+        <div class="d-flex justify-content-end mt-4">
+          <i class="material-icons share_icon">ios_share</i>
+        </div>
+
+        <!-- Logo  -->
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <h2 class="mt-5">
+              <img src="" alt="" /><img
+                src="../assets/images/7Artboard 1.png"
+                width="380px"
+                height="210px"
+                alt=""
+              />
+            </h2>
+          </div>
+
+          <!-- Social icons -->
+          <div class="col-12 text-center social_icons_container">
+            <i class="fa-regular fa-envelope fa-xl mx-2 social_icon"></i>
+            <i class="fa-brands fa-twitter fa-xl mx-2 social_icon"></i>
+            <i class="fa-brands fa-facebook fa-xl mx-2 social_icon"></i>
+            <i class="fa-brands fa-instagram fa-xl mx-2 social_icon"></i>
+          </div>
+
+          <!-- Main links -->
+
+          <div class="col-md-12 col-sm-12 links_container mt-5">
+            <a href="../pages/newToMenu.html" class="link mb-3">Menu</a>
+            <a href="#" class="link mb-3">Feedback</a>
+            <a
+              data-bs-toggle="modal"
+              data-bs-target="#contactUs"
+              class="link mb-3"
+              >Contact Us</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="footer"></div>
+    </main>
+
+    <!-- Contact Us Modal -->
+
+    <div
+      class="modal fade"
+      id="contactUs"
+      tabindex="-1"
+      aria-labelledby="contactUs label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content form">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Contact Us</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- Modal Form -->
+            <form action="" method="post" class="contact-form">
+              <div class="input_wrap">
+                <input
+                  type="text"
+                  class="contact_input"
+                  name="name"
+                  type="text"
+                  autocomplete="off"
+                  required
+                />
+                <label for="name" class="label">Name</label>
+              </div>
+              <div class="input_wrap">
+                <input
+                  type="text"
+                  class="contact_input"
+                  name="email"
+                  type="text"
+                  autocomplete="off"
+                  required
+                />
+                <label for="">Email</label>
+              </div>
+              <div class="input_wrap textarea">
+                <textarea
+                  name="message"
+                  id=""
+                  class="contact_input"
+                  autocomplete="off"
+                ></textarea>
+                <label for="">Message</label>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="submit_btn btn px-4">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/a5c75161e7.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap  -->
+    <script src="../css/bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
+    <!-- link to js file... contains js for contact form -->
+    <script src="../js/landingPage.js"></script>
+  </body>
+</html>

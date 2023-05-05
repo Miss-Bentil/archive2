@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Fonts & Icons -->
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antonio:wght@200;300;400;500;600&family=Montserrat:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/a5c75161e7.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- bootstrap -->
+
+    <link
+      rel="stylesheet"
+      href="../css/bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css"
+    />
+
+    <!-- Link Swiper js's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <!-- CSS Files -->
+    <!-- <link rel="stylesheet" href="/css/index.css" /> -->
+    <!-- <link rel="stylesheet" href="../css/menu.css" /> -->
+    <link rel="stylesheet" href="../css/menu.css" />
+  </head>
+
+  <body>
+    <div class="top_bars">
+      <header class="header" id="header">
+        <!-- This is the header which has the arrow back icon, company logo and the search icon -->
+        <div class="container-fluid">
+          <div class="row align-items-center px-4 py-2">
+            <!-- When the screeen is small, the search icon takes the col size of 8 when hovered and dstrkt logo takes 2 and disappears
+               but its size 2 and 8 respectively by default. It was done using bootstrap cols and js -->
+            <div class="col-2 d-flex justify-content-between px-2">
+              <a href="../pages/landingPage.html" aria-label="Go back to menu">
+                <i class="fa-solid fa-angle-left arrow_back"></i>
+              </a>
+              <a href="#" aria-label="Call" ><i class="fa-solid fa-phone phone_icon"></i> </a>
+            </div>
+            <div class="col-8 text-center district_col col-md-7 col-lg-8">
+              <p class="my-auto district-name">
+                <img
+                  src="../assets/images/d24-removebg-preview.webp"
+                  width="60px"
+                  height="35px"
+                  alt=""
+                />
+              </p>
+            </div>
+            <div class="col-2 search_col col-md-3 col-lg-2">
+              <div class="search_container">
+                <input type="text" id="search-input" placeholder="Search..." />
+                <div class="">
+                  <span class="search_icon"
+                    ><i
+                      class="fa-solid fa-magnifying-glass"
+                      id="search-icon"
+                    ></i
+                  ></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Menu Category Carousel -->
+      <div class="container-fluid">
+        <div class="row menuu">
+          <div class="menu-category_container">
+            <div class="carousel-scroll_container menu-category_wrapper">
+              <div class="carousel-scroll_wrapper">
+                <div class="menu-category">
+                  <a href="/pages/newToMenu.html">
+                    <p class="menu-category_item active">New to Menu</p></a
+                  >
+                  <a href="/pages/starters.html">
+                    <p class="menu-category_item">Starters</p></a
+                  >
+                  <a href=""
+                    ><p class="menu-category_item">Breakfast & Brunch</p></a
+                  >
+                  <a href=""><p class="menu-category_item">Starters</p></a>
+                  <a href=""><p class="menu-category_item">Salad</p></a>
+                  <a href=""><p class="menu-category_item">Burgers</p></a>
+                  <a href=""><p class="menu-category_item">Pizza</p></a>
+                  <a href=""><p class="menu-category_item">Pasta</p></a>
+                  <a href=""><p class="menu-category_item">Soups</p></a>
+                  <a href=""><p class="menu-category_item">Asian Bowls</p></a>
+                  <a href=""><p class="menu-category_item">Seafood</p></a>
+                  <a href=""><p class="menu-category_item">Sandwiches</p></a>
+                  <a href=""><p class="menu-category_item">Kids Meal</p></a>
+                  <a href=""><p class="menu-category_item">Dessert</p></a>
+                  <a href=""><p class="menu-category_item">Drinks</p></a>
+                  <a href=""
+                    ><p class="menu-category_item">Chicken Lovers</p></a
+                  >
+                  <a href=""><p class="menu-category_item">Platters</p></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Food Options -->
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="bg-white mt-2 food-options_container">
+          <div class="grid-container py-3">
+            <a href="#" class="food-options_item">
+              <span>
+                <img
+                  src="../assets/icons/vegan.svg"
+                  class="food-options_icon"
+                  id="vegan"
+                  alt="vegan"
+                />
+              </span>
+              Vegan</a
+            >
+            <a href="" class="food-options_item">
+              <span
+                ><img
+                  src="../assets/icons/noeggs.png"
+                  class="food-options_icon"
+                  id="egg-free"
+                  alt=""
+              /></span>
+              Egg free</a
+            >
+            <a href="" class="food-options_item"
+              ><span
+                ><img
+                  src="../assets/icons/nosugar.png"
+                  class="food-options_icon"
+                  id="sugar-free"
+                  alt="sugar icon"
+              /></span>
+              Sugar free</a
+            >
+
+            <a href="" class="food-options_item">
+              <span
+                ><img
+                  class="food-options_icon"
+                  src="../assets/icons/pepper.png"
+                  id="spicy"
+                  alt=""
+              /></span>
+              Spicy</a
+            >
+            <a href="" class="food-options_item">
+              <span
+                ><img
+                  class="food-options_icon"
+                  src="../assets/icons/vegetarian.png"
+                  id="vegetarian"
+                  alt=""
+              /></span>
+              Vegetarian</a
+            >
+
+            <a href="" class="food-options_item">
+              <span
+                ><img
+                  class="food-options_icon"
+                  id="dairy-free"
+                  src="../assets/icons/nomilk.png"
+                  alt=""
+              /></span>
+              Dairy free</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- New Item on the Menu -->
+    <!-- This was done using Swiper.js -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="new-item_card swiper-slide position-relative">
+              <img src="../assets/images/foodimages/food2.webp" alt="" />
+              <div class="carousel_caption position-absolute">
+                <div class="carousel-caption_title">Your favorite</div>
+                <div class="carousel-caption_subtitle">
+                  Grilled Salmon with a zesty citrus glaze.
+                </div>
+              </div>
+            </div>
+            <div class="new-item_card swiper-slide">
+              <img src="../assets/images/foodimages/pancake.webp" alt="" />
+              <div class="carousel_caption position-absolute">
+                <div class="carousel-caption_title">Your Favourite</div>
+                <div class="carousel-caption_subtitle">
+                  Grilled Salmon with a zesty citrus glaze.
+                </div>
+              </div>
+            </div>
+            <div class="new-item_card swiper-slide">
+              <img src="../assets/images/foodimages/rice.webp" alt="" />
+              <div class="carousel_caption position-absolute">
+                <div class="carousel-caption_title">Your Favourite</div>
+                <div class="carousel-caption_subtitle">
+                  Grilled Salmon with a zesty citrus glaze. e!
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Active Page -->
+    <div class="container mt-3">
+      <p c class="menu-category_name">
+        <img
+          src="../assets/images/vertical_bar-removebg-preview.webp"
+          class="culture_icon"
+          width="30px"
+          height="40px"
+          alt=""
+        />
+        New to Menu
+      </p>
+
+      <!-- Preview Cards -->
+      <!-- Js was used to show a few lines on the preview card... check menu.js -->
+      <div class="row mb-1">
+        <div class="col-lg-6 col-sm-12">
+          <div
+            class="card mb-3"
+            style="max-width: 540px; max-width: 100%"
+            data-bs-toggle="modal"
+            data-bs-target="#cardDetail"
+          >
+            <div class="row g-0 preview_card">
+              <div class="col-md-4 col-4 preview-card-food_image">
+                <img
+                  src="../assets/images/foodimages/food1.webp"
+                  class="img-fluid rounded-start w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8 col-8">
+                <div class="card-body">
+                  <h5 class="preview-card_title">Mediteranean Quinoa</h5>
+                  <p class="preview-card_text card_snippet">
+                    Our Mediterranean Quinoa Salad is a delicious and nutritious
+                    dish that's perfect for health-conscious diners. This
+                    colorful salad features a base of fluffy quinoa, which is
+                    rich in protein and fiber, and topped with a variety of
+                    fresh and flavorful ingredients. You'll savor the juicy
+                    sweetness of cherry tomatoes, the crisp crunch of cucumbers,
+                    and the tangy saltiness of feta cheese, all perfectly
+                    balanced with a zesty lemon dressing.
+                  </p>
+                  <div class="card_footer d-flex justify-content-between">
+                    <div class="food_options">
+                      <img
+                        src="../assets/icons/Vegan.svg"
+                        class="food-options_icon"
+                        alt=""
+                      />
+                      <img
+                        src="../assets/icons/nosugar.png"
+                        class="food-options_icon"
+                        alt=""
+                      />
+                    </div>
+                    <div class="price">Ghc250</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-sm-12">
+          <div class="card mb-3" style="max-width: 540px; max-width: 100%">
+            <div class="row g-0">
+              <div class="col-md-4 col-4 preview-card-food_image">
+                <img
+                  src="../assets/images/foodimages/beefnoodles.webp"
+                  class="img-fluid rounded-start w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8 col-8">
+                <div class="card-body">
+                  <h5 class="preview-card_title">Beef Noodles</h5>
+                  <p class="preview-card_text card_snippet">
+                    Beef noodles are a classic and delicious dish that can be
+                    found on many restaurant menus around the world. Typically
+                    made with tender chunks of beef, savory broth, and chewy
+                    noodles, this dish is both hearty and satisfying.
+                  </p>
+                  <div class="card_footer d-flex justify-content-between">
+                    <div class="food_options">
+                      <img
+                        src="../assets/icons/Vegan.svg"
+                        class="food-options_icon"
+                        alt=""
+                      />
+                      <img
+                        src="../assets/icons/nosugar.png"
+                        class="food-options_icon"
+                        alt=""
+                      />
+                    </div>
+                    <div class="price">Ghc500</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mb-1">
+        <div class="col-lg-6 col-sm-12">
+          <div
+            class="card mb-3"
+            style="max-width: 540px; max-width: 100%"
+            data-bs-toggle="modal"
+            data-bs-target="#cardDetail"
+          >
+            <div class="row g-0">
+              <div class="col-md-4 col-4 preview-card-food_image">
+                <img
+                  src="../assets/images/foodimages/shrimpnoodles.webp"
+                  class="img-fluid rounded-start w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8 col-8">
+                <div class="card-body">
+                  <h5 class="preview-card_title">Shrimp Noodles</h5>
+                  <p class="preview-card_text card_snippet">
+                    Shrimp noodles are a mouth-watering dish that is a popular
+                    staple in many Asian cuisines. Tender shrimp is combined
+                    with flavorful vegetables, such as scallions, bok choy, and
+                    bean sprouts, and then tossed with tender and chewy noodles,
+                    resulting in a dish that is both hearty and satisfying. This
+                    delectable meal is often served in a savory broth, which
+                    gives it a rich and complex flavor that is hard to resist.
+                    With its combination of fresh ingredients and bold flavors,
+                    shrimp noodles make for a delicious and memorable addition
+                    to any menu.
+                  </p>
+                  <div class="card_footer d-flex justify-content-between">
+                    <div class="food_options">
+                      <img
+                        src="../assets/icons/pepper.png"
+                        class="food-options_icon"
+                        alt=""
+                      />
+                      <img
+                        src="../assets/icons/nosugar.png"
+                        class="food-options_icon"
+                        alt=""
+                      />
+                    </div>
+                    <div class="price">Ghc200</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-sm-12">
+          <div class="card mb-3" style="max-width: 540px; max-width: 100%">
+            <div class="row g-0">
+              <div class="col-md-4 col-4 preview-card-food_image">
+                <img
+                  src="../assets/images/foodimages/grilledchicken.webp"
+                  class="img-fluid rounded-start w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8 col-8">
+                <div class="card-body">
+                  <h5 class="preview-card_title">Salad</h5>
+                  <p class="preview-card_text card_snippet">
+                    Grilled chicken is a classic and flavorful dish that is a
+                    favorite of many. Our version features juicy and tender
+                    chicken breast that has been marinated in a blend of herbs
+                    and spices, and then expertly grilled to perfection. The
+                    smoky and charred exterior of the chicken adds an extra
+                    layer of flavor and texture, while the moist and succulent
+                    interior is sure to please your taste buds. Served with a
+                    side of roasted vegetables and a tangy sauce, this dish is
+                    the perfect balance of healthy and delicious. Whether you
+                    are looking for a light and satisfying lunch or a hearty
+                    dinner, our grilled chicken is sure to satisfy your appetite
+                    and leave you feeling satisfied.
+                  </p>
+                  <div class="card_footer d-flex justify-content-between">
+                    <div class="food_options">
+                      <img
+                        src="../assets/icons/Vegan.svg"
+                        class="food-options_icon"
+                        alt=""
+                      />
+                      <img
+                        src="../assets/icons/nosugar.png"
+                        class="food-options_icon"
+                        alt=""
+                      />
+                    </div>
+                    <div class="price">Ghc50</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-1">
+        <div class="col-lg-6 col-sm-12">
+          <div
+            class="card mb-3"
+            style="max-width: 540px; max-width: 100%"
+            data-bs-toggle="modal"
+            data-bs-target="#cardDetail"
+          >
+            <div class="row g-0">
+              <div class="col-md-4 col-4 preview-card-food_image">
+                <img
+                  src="../assets/images/foodimages/shrimpnoodles.webp"
+                  class="img-fluid rounded-start w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8 col-8">
+                <div class="card-body">
+                  <h5 class="preview-card_title">Shrimp Noodles</h5>
+                  <p class="preview-card_text card_snippet">
+                    Shrimp noodles are a mouth-watering dish that is a popular
+                    staple in many Asian cuisines. Tender shrimp is combined
+                    with flavorful vegetables, such as scallions, bok choy, and
+                    bean sprouts, and then tossed with tender and chewy noodles,
+                    resulting in a dish that is both hearty and satisfying. This
+                    delectable meal is often served in a savory broth, which
+                    gives it a rich and complex flavor that is hard to resist.
+                    With its combination of fresh ingredients and bold flavors,
+                    shrimp noodles make for a delicious and memorable addition
+                    to any menu.
+                  </p>
+                  <div class="card_footer d-flex justify-content-between">
+                    <div class="food_options">
+                      <img
+                        src="../assets/icons/pepper.png"
+                        class="food-options_icon"
+                        alt=""
+                      />
+                      <img
+                        src="../assets/icons/nosugar.png"
+                        class="food-options_icon"
+                        alt=""
+                      />
+                    </div>
+                    <div class="price">Ghc50</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-sm-12">
+          <div class="card mb-3" style="max-width: 540px; max-width: 100%">
+            <div class="row g-0">
+              <div class="col-md-4 col-4 preview-card-food_image">
+                <img
+                  src="../assets/images/foodimages/grilledchicken.webp"
+                  class="img-fluid rounded-start w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8 col-8">
+                <div class="card-body">
+                  <h5 class="preview-card_title">Salad</h5>
+                  <p class="preview-card_text card_snippet">
+                    Grilled chicken is a classic and flavorful dish that is a
+                    favorite of many. Our version features juicy and tender
+                    chicken breast that has been marinated in a blend of herbs
+                    and spices, and then expertly grilled to perfection. The
+                    smoky and charred exterior of the chicken adds an extra
+                    layer of flavor and texture, while the moist and succulent
+                    interior is sure to please your taste buds. Served with a
+                    side of roasted vegetables and a tangy sauce, this dish is
+                    the perfect balance of healthy and delicious. Whether you
+                    are looking for a light and satisfying lunch or a hearty
+                    dinner, our grilled chicken is sure to satisfy your appetite
+                    and leave you feeling satisfied.
+                  </p>
+                  <div class="card_footer d-flex justify-content-between">
+                    <div class="food_options">
+                      <img
+                        src="../assets/icons/Vegan.svg"
+                        class="food-options_icon"
+                        alt=""
+                      />
+                      <img
+                        src="../assets/icons/nosugar.png"
+                        class="food-options_icon"
+                        alt=""
+                      />
+                    </div>
+                    <div class="price">Ghc50</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Food Suggestions -->
+    <div class="container-fluid">
+      <div class="row">
+        <h5 class="mt-2 suggestions_subtitle">Chef's recommendations</h5>
+        <div class="carousel-scroll_container">
+          <div class="carousel-scroll_wrapper position-relative">
+            <div class="menu-category">
+              <a href="">
+                <div class="menu-category_item">
+                  <div class="card suggestion_card" style="width: 18rem">
+                    <img
+                      src="../assets/images/foodimages/pancake.webp"
+                      class="card-img"
+                      alt="..."
+                      style="width: 100%; height: 200px; object-fit: cover"
+                    />
+
+                    <div
+                      class="suggestion-card_body d-flex justify-content-between p-1"
+                    >
+                      <p class="suggestion-card_title">Pancake</p>
+                      <p class="suggestion-card_price">Ghc 20</p>
+                    </div>
+                  </div>
+                </div></a
+              >
+              <a href="">
+                <div class="menu-category_item">
+                  <div class="card suggestion_card" style="width: 18rem">
+                    <img
+                      src="../assets/images/foodimages/pizza.webp"
+                      class="card-img"
+                      alt="..."
+                      style="width: 100%; height: 200px; object-fit: cover"
+                    />
+                    <div
+                      class="suggestion-card_body d-flex justify-content-between p p-1"
+                    >
+                      <p class="suggestion-card_title">Pizza</p>
+                      <p class="suggestion-card_price">Ghc 20</p>
+                    </div>
+                  </div>
+                </div></a
+              >
+              <a href=""
+                ><div class="menu-category_item">
+                  <div class="card suggestion_card" style="width: 18rem">
+                    <img
+                      src="../assets/images/foodimages/soup.webp"
+                      class="card-img"
+                      alt="..."
+                      style="width: 100%; height: 200px; object-fit: cover"
+                    />
+                    <div
+                      class="suggestion-card_body d-flex justify-content-between p p-1"
+                    >
+                      <p class="suggestion-card_title">Soup</p>
+                      <p class="suggestion-card_price">Ghc 20</p>
+                    </div>
+                  </div>
+                </div></a
+              >
+              <a href=""
+                ><div class="menu-category_item">
+                  <div class="card suggestion_card" style="width: 18rem">
+                    <img
+                      src="../assets/images/foodimages/sushi.webp"
+                      class="card-img"
+                      alt="..."
+                      style="width: 100%; height: 200px; object-fit: cover"
+                    />
+                    <div
+                      class="suggestion-card_body d-flex justify-content-between p p-1"
+                    >
+                      <p class="suggestion-card_title">Sushi</p>
+                      <p class="suggestion-card_price">Ghc 20</p>
+                    </div>
+                  </div>
+                </div></a
+              >
+              <a href=""
+                ><div class="menu-category_item">
+                  <div class="card suggestion_card" style="width: 18rem">
+                    <img
+                      src="../assets/images/foodimages/cocktail.webp"
+                      class="card-img"
+                      alt="..."
+                      style="width: 100%; height: 200px; object-fit: cover"
+                    />
+                    <div
+                      class="suggestion-card_body d-flex justify-content-between p p-1"
+                    >
+                      <p class="suggestion-card_title">Sex on the beach</p>
+                      <p class="suggestion-card_price">Ghc 20</p>
+                    </div>
+                  </div>
+                </div></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card Detail Modal -->
+    <div
+      class="modal fade"
+      id="cardDetail"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content w-600">
+          <div class="modal-header">
+            <h1 class="card-detail-modal_title" id="card-detail-title">
+              <img
+                src="../assets/images/circle-removebg-preview (1).png"
+                class="culture_icon"
+                alt=""
+              />
+              Mediteranean Quinoa
+            </h1>
+          </div>
+          <div class="modal-body">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-5 position-relative">
+                  <img
+                    src="../assets/images/foodimages/food1.webp"
+                    class="img-fluid rounded-start"
+                    alt="..."
+                  />
+                  <span class="position-absolute time_badge rounded-pill">
+                    20min
+                    <span class="visually-hidden">Estimated cooking time</span>
+                  </span>
+                  <span class="food_badge position-absolute">
+                    <ul
+                      class="card-detail-modal_icons d-flex justify-content-center"
+                    >
+                      <li>
+                        <img
+                          src="../assets/icons/vegan.svg"
+                          class="modal-food-options_icon"
+                          alt=""
+                        />
+                      </li>
+                      <li>
+                        <img
+                          src="../assets/icons/nomilk.png"
+                          class="modal-food-options_icon"
+                          alt=""
+                        />
+                      </li>
+                      <li>
+                        <img
+                          src="../assets/icons/spicy.svg"
+                          class="modal-food-options_icon"
+                          alt=""
+                        />
+                      </li>
+                    </ul>
+                  </span>
+                </div>
+                <div class="col-md-7">
+                  <div class="modal-body">
+                    <p class="card-detail-modal_text">
+                      Our Mediterranean Quinoa Salad is a delicious and
+                      nutritious dish that's perfect for health-conscious
+                      diners. This colorful salad features a base of fluffy
+                      quinoa, which is rich in protein and fiber, and topped
+                      with a variety of fresh and flavorful ingredients. You'll
+                      savor the juicy sweetness of cherry tomatoes, the crisp
+                      crunch of cucumbers, and the tangy saltiness of feta
+                      cheese, all perfectly balanced with a zesty lemon
+                      dressing.
+                    </p>
+                    <h5 class="card-detail-modal_subtitle">Ingredients</h5>
+                    <p class="card-detail-modal_text">
+                      vegetables, including juicy cherry tomatoes, crunchy
+                      cucumbers, and tangy red onions.
+                    </p>
+
+                    <div class="card_footer d-flex justify-content-between">
+                      <div class="card-detail-modal_calories">
+                        <p class="calories">200cal</p>
+                      </div>
+
+                      <div class="price">Ghc250</div>
+                    </div>
+
+                    <h5 class="mt-1 card-detail-modal_subtitle">
+                      Allergy Infromation
+                    </h5>
+                    <p
+                      id="read_more"
+                      class="additional_info"
+                      style="font-size: 0.8rem"
+                    >
+                      Read More
+                    </p>
+                    <div
+                      id="caution"
+                      style="display: none"
+                      class="card-detail-modal_text"
+                    >
+                      Not all ingredients are listed in the menu. Before placing
+                      your order, please contact the restaurant if a person in
+                      your party has a food allergy or other food sensitivities
+                      <div
+                        id="read_less"
+                        class="additional_info pt-1"
+                        style="display: none; font-size: 0.8rem"
+                      >
+                        Read Less
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Recommended -->
+            <div class="container-fluid">
+              <div class="row">
+                <h5 class="mt-2 suggestions_subtitle">Recommended Beverages</h5>
+                <div class="carousel-scroll_container">
+                  <div class="carousel-scroll_wrapper position-relative">
+                    <div class="menu-category">
+                      <a href="">
+                        <div class="menu-category_item">
+                          <div
+                            class="card suggestion_card"
+                            style="width: 18rem"
+                          >
+                            <img
+                              src="../assets/images/foodimages/cocacola.webp"
+                              class="card-img"
+                              alt="..."
+                              style="
+                                width: 100%;
+                                height: 200px;
+                                object-fit: cover;
+                              "
+                            />
+                            <div
+                              class="suggestion-card_body d-flex justify-content-between p p-1"
+                            >
+                              <p class="suggestion-card_title">Coca cola</p>
+                              <p class="suggestion-card_price">Ghc 20</p>
+                            </div>
+                          </div>
+                        </div></a
+                      >
+                      <a href=""
+                        ><div class="menu-category_item">
+                          <div
+                            class="card suggestion_card"
+                            style="width: 18rem"
+                          >
+                            <img
+                              src="../assets/images/foodimages/smoothie.webp"
+                              class="card-img"
+                              alt="..."
+                              style="
+                                width: 100%;
+                                height: 200px;
+                                object-fit: cover;
+                              "
+                            />
+                            <div
+                              class="suggestion-card_body d-flex justify-content-between p p-1"
+                            >
+                              <p class="suggestion-card_title">
+                                Chocolate Milkshake
+                              </p>
+                              <p class="suggestion-card_price">Ghc 20</p>
+                            </div>
+                          </div>
+                        </div></a
+                      >
+                      <a href=""
+                        ><div class="menu-category_item">
+                          <div
+                            class="card suggestion_card"
+                            style="width: 18rem"
+                          >
+                            <img
+                              src="../assets/images/foodimages/sexonthebeach.webp"
+                              class="card-img"
+                              alt="..."
+                              style="
+                                width: 100%;
+                                height: 200px;
+                                object-fit: cover;
+                              "
+                            />
+                            <div
+                              class="suggestion-card_body d-flex justify-content-between p p-1"
+                            >
+                              <p class="suggestion-card_title">All night</p>
+                              <p class="suggestion-card_price">Ghc 20</p>
+                            </div>
+                          </div>
+                        </div></a
+                      >
+                      <a href=""
+                        ><div class="menu-category_item">
+                          <div
+                            class="card suggestion_card"
+                            style="width: 18rem"
+                          >
+                            <img
+                              src="../assets/images/foodimages/cocktail.webp"
+                              class="card-img"
+                              alt="..."
+                              style="
+                                width: 100%;
+                                height: 200px;
+                                object-fit: cover;
+                              "
+                            />
+                            <div
+                              class="suggestion-card_body d-flex justify-content-between p p-1"
+                            >
+                              <p class="suggestion-card_title">
+                                Sex on the beach
+                              </p>
+                              <p class="suggestion-card_price">Ghc 20</p>
+                            </div>
+                          </div>
+                        </div></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Food Suggestions -->
+            <div class="container-fluid">
+              <div class="row">
+                <h5 class="mt-2 suggestions_subtitle">
+                  Chef's recommendations
+                </h5>
+                <div class="carousel-scroll_container">
+                  <div class="carousel-scroll_wrapper position-relative">
+                    <div class="menu-category">
+                      <a href="">
+                        <div class="menu-category_item">
+                          <div
+                            class="card suggestion_card"
+                            style="width: 18rem"
+                          >
+                            <img
+                              src="../assets/images/foodimages/pancake.webp"
+                              class="card-img"
+                              alt="..."
+                              style="
+                                width: 100%;
+                                height: 200px;
+                                object-fit: cover;
+                              "
+                            />
+                            <div
+                              class="suggestion-card_body d-flex justify-content-between p-1"
+                            >
+                              <p class="suggestion-card_title">Pancake</p>
+                              <p class="suggestion-card_price">Ghc 20</p>
+                            </div>
+                          </div>
+                        </div></a
+                      >
+                      <a href="">
+                        <div class="menu-category_item">
+                          <div
+                            class="card suggestion_card"
+                            style="width: 18rem"
+                          >
+                            <img
+                              src="../assets/images/foodimages/pancake.webp"
+                              class="card-img"
+                              alt="..."
+                              style="
+                                width: 100%;
+                                height: 200px;
+                                object-fit: cover;
+                              "
+                            />
+                            <div
+                              class="suggestion-card_body d-flex justify-content-between p p-1"
+                            >
+                              <p class="suggestion-card_title">Pizza</p>
+                              <p class="suggestion-card_price">Ghc 20</p>
+                            </div>
+                          </div>
+                        </div></a
+                      >
+                      <a href=""
+                        ><div class="menu-category_item">
+                          <div
+                            class="card suggestion_card"
+                            style="width: 18rem"
+                          >
+                            <img
+                              src="../assets/images/foodimages/soup.webp"
+                              class="card-img"
+                              alt="..."
+                              style="
+                                width: 100%;
+                                height: 200px;
+                                object-fit: cover;
+                              "
+                            />
+                            <div
+                              class="suggestion-card_body d-flex justify-content-between p p-1"
+                            >
+                              <p class="suggestion-card_title">Soup</p>
+                              <p class="suggestion-card_price">Ghc 20</p>
+                            </div>
+                          </div>
+                        </div></a
+                      >
+                      <a href=""
+                        ><div class="menu-category_item">
+                          <div
+                            class="card suggestion_card"
+                            style="width: 18rem"
+                          >
+                            <img
+                              src="../assets/images/foodimages/sushi.webp"
+                              class="card-img"
+                              alt="..."
+                              style="
+                                width: 100%;
+                                height: 200px;
+                                object-fit: cover;
+                              "
+                            />
+                            <div
+                              class="suggestion-card_body d-flex justify-content-between p p-1"
+                            >
+                              <p class="suggestion-card_title">Sushi</p>
+                              <p class="suggestion-card_price">Ghc 20</p>
+                            </div>
+                          </div>
+                        </div></a
+                      >
+                      <a href=""
+                        ><div class="menu-category_item">
+                          <div
+                            class="card suggestion_card"
+                            style="width: 18rem"
+                          >
+                            <img
+                              src="../assets/images/foodimages/cocktail.webp"
+                              class="card-img"
+                              alt="..."
+                              style="
+                                width: 100%;
+                                height: 200px;
+                                object-fit: cover;
+                              "
+                            />
+                            <div
+                              class="suggestion-card_body d-flex justify-content-between p p-1"
+                            >
+                              <p class="suggestion-card_title">
+                                Sex on the beach
+                              </p>
+                              <p class="suggestion-card_price">Ghc 20</p>
+                            </div>
+                          </div>
+                        </div></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary submit_btn"
+              id="modal-btn"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container-xxl flex-wrap py-2 flex-md-row flex-column">
+        <div class="mb-2 mb-md-0" style="font-size: 10px">
+          © <span id="currentYear"></span>, Developed by
+          <a
+            href="https://www.curlyapp.net"
+            target="_blank"
+            class="footer-link fw-bolder"
+            >Curly App</a
+          >, For
+          <a
+            href="http://districtmanagement.net/"
+            target="_blank"
+            class="footer-link fw-bolder"
+            >District Management</a
+          >
+          <span class="" style="font-size: 10px"
+            >, Copyright (c) CleVision Technologies Private Limited</span
+          >
+        </div>
+      </div>
+
+      <script>
+        const currentYear = new Date().getFullYear();
+        const yearElement = document.getElementById('currentYear');
+        yearElement.textContent = currentYear.toString();
+      </script>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script src="../css/bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script> -->
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- JS file -->
+    <script src="../js/menu.js"></script>
+  </body>
+</html>
